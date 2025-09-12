@@ -10,7 +10,7 @@ body {
     background: #fff;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 150px);
 }
 
 .header {
@@ -19,18 +19,30 @@ body {
     text-align: center;
     height: 50px;
 }
+
 .text {
     background: #c8e6a5;
     padding: 20px;
     box-sizing: border-box;
-    height: 450px;
+    height: 410px;
+    text-align: center;
 }
+
+.centerText {
+    display: flex;
+    justify-content: center;
+    align-items: center;       
+    text-align: center;
+}
+
 .sideimg {
     background: #9ccc65;
     padding: 20px;
     box-sizing: border-box;
-    height: 450px;
+    height: 410px;
+    text-align: center;
 }
+
 .footer {
     background: #80deea;
     padding: 20px;
@@ -41,16 +53,30 @@ body {
 .float .main {
     overflow: hidden; 
 }
+
 .float .text {
     float: left;
     width: 70%;
 }
+
 .float .sideimg {
     float: left;
     width: 30%;
 }
+
 .float .footer {
     clear: both;
+}
+
+.textfloat {
+    position: relative;
+}
+
+.textfloat h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* --- FLEX --- */
@@ -58,13 +84,16 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 .flex .main {
     display: flex;
     flex-direction: row;
 }
+
 .flex .text {
     flex: 70%;
 }
+
 .flex .sideimg {
     flex: 30%;
 }
