@@ -4,31 +4,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Грицай Р-В. М., ІМ-31, 4</title>
-
-  <!-- Uncomment Link tag below to connect .css file -->
-  <!-- <link rel="stylesheet" href="./css/style.css"> -->
-   
+  <link rel="stylesheet" href="./css/style.css"> 
   <meta name="keywords" content="прізвище, ім'я, група, студент, хобі">
   <meta name="description" content="Персональна навчальна сторінка студента з HTML-5">
 </head>
 <body>
-  <header>
-    <h1>Мова гіпертекстової розмітки сайту HTML-5</h1>
-  </header>
-
   <main>
     <section>
       <h2>Грицай Руслан-Владислав М.</h2>
 
       <p>Народився: 17 червня 2000 року, м. Київ.</p>
 
-      <p>Освіта: Гімназія №59, КПІ імені Ігоря СМікорського, (ФІОТ) спеціальність «Інженерія Програмного забезпечення».</p>
+      <h3>Освіта</h3>
+      <ul>
+        <li>Гімназія №59</li>
+        <li>КПІ імені Ігоря Сікорського, (ФІОТ) спеціальність «Інженерія програмного забезпечення»</li>
+      </ul>
     </section>
 
     <section>
-      <h3>Мої хобі</h3>
+      <h3 id="element6">Мої хобі</h3>
       <ul>
-        <li>Розв'язок головоломків</li>
+        <li id="element7">Розв'язок головоломків</li>
         <li>Front-end розробка та С# програмування</li>
         <li>Волейбол</li>
         <li>Подорожі та прогулянки</li>
@@ -51,12 +48,23 @@
       <p>Місто Валенсія розташований на середземноморському узбережжі Піренейського півострова, у великій заплаві річок Хукар і Турія, на березі Валенсійської затоки. Стародавнє місто перебувало
          приблизно за чотири кілометри від моря, на річковому острові Турія. Найближчі до міста гори — Кабесоль-де-Ель-Пуїг і Сьєрра-Кальдерона, передгір'я Іберійської системи (приблизно за 12 і 25 км на північ від міста відповідно). Центр міста лежить на висоті 11 метрів над рівнем моря.</p>
 
-      <figure>
+      <figure id="imgContainer">
         <a href="https://continentestate.com/uk/valencia/" target="_blank" rel="noopener">
-          <img src="images/image.png" alt="Панорама улюбленого міста з набережною">
+          <div class="img-wrapper">
+            <img id="valenciaImg" src="images/image.png" alt="Панорама улюбленого міста з набережною">
+          </div>
         </a>
       </figure>
+
+      <div class="buttons">
+        <button id="addBtn">Додати</button>
+        <button id="increaseBtn">Збільшити</button>
+        <button id="decreaseBtn">Зменшити</button>
+        <button id="removeBtn">Видалити</button>
+      </div>
     </section>
   </main>
+
+  <script src="./js/script.js"></script>
 </body>
 </html>
