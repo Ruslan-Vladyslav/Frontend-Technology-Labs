@@ -7,6 +7,40 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <div class="form_wrapper">
+        <form action="index.html" method="post" id="myForm">
+            <h3 class="input_title">1. Ваше ім’я:</h3>
+            <span class="error" id="err-fnm"></span>
+            <input type="text" name="fnm"><br>
 
+            <h3 class="input_title">2. Факультет:</h3>
+            <span class="error" id="err-faculty"></span>
+            <input type="text" name="faculty"><br>
+
+            <h3 class="input_title">3. Адреса:</h3>
+            <span class="error" id="err-address"></span>
+            <input type="text" name="address"><br>
+
+            <h3 class="input_title">4. Дата народження:</h3>
+            <span class="error" id="err-birthdate"></span>
+            <input type="text" name="birthdate"><br>
+
+            <h3 class="input_title">5. E-Mail:</h3>
+            <span class="error" id="err-email"></span>
+            <input type="text" name="email"><br>
+
+            <div class="form_buttons">
+                <input type="submit" value="Надіслати">
+                <input type="button" value="Очистити" id="clearBtn">
+            </div>
+        </form>
+
+        <div id="result">
+            <h3>Введені дані:</h3>
+            <div id="output">Поки що нічого не заповнено</div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
 </body>
 </html>
