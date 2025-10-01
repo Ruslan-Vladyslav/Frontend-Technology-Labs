@@ -34,11 +34,11 @@ btn.addEventListener('click', () => {
           <div class="user-card">
             <img src="${escapeHtml(picture)}" alt="avatar" />
             <ul style="list-style:none; padding:0; margin:0;">
-              <li><b>1.</b> picture ↑</li>
-              <li><b>3.</b> cell: ${escapeHtml(cell)}</li>
-              <li><b>5.</b> country: ${escapeHtml(country)}</li>
-              <li><b>7.</b> email: ${escapeHtml(email)}</li>
-              <li><b>9.</b> coordinates: <span class="coords">${escapeHtml(coords)}</span></li>
+              <li class="row"><b>1.</b> picture ↑</li>
+              <li class="row"><b>3.</b> cell: ${escapeHtml(cell)}</li>
+              <li class="row"><b>5.</b> country: ${escapeHtml(country)}</li>
+              <li class="row"><b>7.</b> email: ${escapeHtml(email)}</li>
+              <li class="row"><b>9.</b> coordinates: <span class="coords">${escapeHtml(coords)}</span></li>
             </ul>
           </div>
         `;
