@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, NavLink  } from "react-router-dom";
 import Home from "./Home.jsx";
 import GoodsGallery from "./GoodsGallery.jsx";
 
@@ -7,7 +7,19 @@ function App() {
     <Router>
       <div className="nav-wrapper">
         <nav>
-          <Link to="/">Головна</Link> | <Link to="/gallery">Галерея товарів</Link>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active-link" : "")}
+          >
+            Головна
+          </NavLink>
+          {" | "}
+          <NavLink
+            to="/gallery"
+            className={({ isActive }) => (isActive ? "active-link" : "")}
+          >
+            Галерея товарів
+          </NavLink>
         </nav>
       </div>
 

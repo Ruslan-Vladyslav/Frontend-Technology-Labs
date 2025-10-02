@@ -12,6 +12,11 @@
   font-size: 18px;
 }
 
+.nav-wrapper nav a.active-link {
+  color: #7666c3;  
+  border-bottom: 2px solid #7666c3; 
+}
+
 .nav-wrapper nav a:hover {
-  color: #7666c3;
+  color: #9a8fff;
 }

@@ -1,12 +1,14 @@
 import GoodsCard from './components/GoodsCard';
 
 const goods = [
-  { id: 1, name: 'Товар 1', price: 100, img: '/assets/product1.png' },
-  { id: 2, name: 'Товар 2', price: 200, img: '/assets/product2.png' },
-  { id: 3, name: 'Товар 3', price: 300, img: '/assets/product3.png' },
-  { id: 4, name: 'Товар 4', price: 150, img: '/assets/product4.png' },
-  { id: 5, name: 'Товар 5', price: 250, img: '/assets/product5.png' },
-  { id: 6, name: 'Товар 6', price: 350, img: '/assets/product6.png' },
+  { id: 1, name: 'iPhone 14 Pro', price: 1200, img: '/src/assets/iphone14.png' },
+  { id: 2, name: 'Samsung Galaxy S23', price: 1100, img: '/src/assets/samsungs23.jpg' },
+  { id: 3, name: 'Google Pixel 8', price: 900, img: '/src/assets/pixel.jpg' },
+  { id: 4, name: 'OnePlus 11', price: 850, img: '/src/assets/oneplus.jpg' },
+  { id: 5, name: 'Xiaomi 13 Pro', price: 780, img: '/src/assets/xiaomi.jpg' },
+  { id: 6, name: 'Sony Xperia 1 IV', price: 950, img: '/src/assets/xperia.jpg' },
+  { id: 7, name: 'Motorola Edge 40', price: 700, img: '/src/assets/motorola.jpg' },
+  { id: 8, name: 'Huawei P60 Pro', price: 820, img: '/src/assets/huawei.jpg' },
 ];
 
 function GoodsGallery() {
