@@ -1,0 +1,17 @@
+.nav-wrapper {
+  display: flex;
+  justify-content: center; 
+  margin-top: 30px;       
+}
+
+.nav-wrapper nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #5d4fa1;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-wrapper nav a:hover {
+  color: #7666c3;
+}
